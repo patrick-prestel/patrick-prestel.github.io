@@ -341,59 +341,59 @@ ul li {
 	text-shadow: none;
 }
 /* ------------------------------------------------------------------------------
-	 Services
+	 Soulfood
 -------------------------------------------------------------------------------*/
-.services {
+.soulfood {
 	width: 94%;
 	margin: auto;
 	background-color: #f2f2f2;
 }
-.services h4 {
+.soulfood h4 {
 	font-size: 33px;
 	line-height: 33px;
 	letter-spacing: 2px;
 	font-weight: 300;
 }
-.services h5 {
+.soulfood h5 {
 	font-size: 21px;
 	font-weight: 300;
 	margin-bottom: 10%;
 	text-transform: none;
 }
-.services p {
+.soulfood p {
 	color: #6c7279;
 	font-size: 13px;
 	font-weight: 400;
 	margin-top: 7%;
 }
-.services-content {
+.soulfood-content {
 	margin: 50px;
 }
-.services-content li a {
+.soulfood-content li a {
 	color: #6c7279;
 	line-height: 30px;
 }
-.services-content li a:hover {
+.soulfood-content li a:hover {
 	color: #000;
 }
 /* ------------------------------------------------------------------------------
-	 Portfolio
+	 Vita
 -------------------------------------------------------------------------------*/
-#portfolio {
-	width: 92%;
+#vita {
+	width: 100%;
 	margin: auto;
 }
-#portfolio .portfolio-item {
+#vita .vita-item {
 	right: 0;
 	margin: 0 0 2px;
 	padding: 0 1px;
 }
-#portfolio .portfolio-item .portfolio-link {
+#vita .vita-item .vita-link {
 	display: block;
 	position: relative;
 	margin: 0 auto;
 }
-#portfolio .portfolio-item .portfolio-link .caption {
+#vita .vita-item .vita-link .caption {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -403,10 +403,10 @@ ul li {
 	-moz-transition: all ease .5s;
 	transition: all ease .5s;
 }
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#vita .vita-item .vita-link .caption:hover {
 	opacity: 1;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#vita .vita-item .vita-link .caption .caption-content {
 	position: absolute;
 	top: 50%;
 	width: 100%;
@@ -416,48 +416,58 @@ ul li {
 	font-size: 20px;
 	color: #fff;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#vita .vita-item .vita-link .caption .caption-content i {
 	margin-top: -12px;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h3 {
+#vita .vita-item .vita-link .caption .caption-content h3 {
 	margin: 0;
 	color: #e9eaed;
 	font-size: 17px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 }
-#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+#vita .vita-item .vita-link .caption .caption-content h4 {
 	margin: 10px 0;
 	color: #e9eaed;
 	font-size: 12px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-#portfolio * {
+#vita * {
 	z-index: 2;
 }
 /* ------------------------------------------------------------------------------
-	 Testimonials
+	 Workshops
 -------------------------------------------------------------------------------*/
-.testimonials {
+.workshops {
 	width: 94%;
 	margin: auto;
 	background-color: #333;
 	position: relative;
-	text-align: center;
 }
-.testimonials blockquote {
+.workshops-content {
+	margin: 50px;
+}
+.workshops blockquote {
+  text-align: center;
 	border: 0;
 	margin: 0;
 	padding: 100px 15%;
 }
-.testimonials h1 {
+.workshops h1 {
 	color: #fff;
 	font: 19px "Open Sans", sans-serif;
 	font-weight: 300;
 	letter-spacing: 1px;
 }
-.testimonials p {
+.workshops h4 {
+	font-size: 33px;
+	line-height: 33px;
+	letter-spacing: 2px;
+	font-weight: 300;
+  color: #fff;
+}
+.workshops p {
 	color: #fff;
 	display: block;
 	font-size: 11px;
@@ -466,6 +476,43 @@ ul li {
 	font-weight: 400;
 	margin-top: 30px;
 	text-transform: uppercase;
+}
+/* ------------------------------------------------------------------------------
+	 Sheet music
+-------------------------------------------------------------------------------*/
+.sheet-music {
+	width: 94%;
+	margin: auto;
+  margin-top: 2em;
+	background-color: #f2f2f2;
+}
+.sheet-music h4 {
+	font-size: 33px;
+	line-height: 33px;
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+.sheet-music h5 {
+	font-size: 21px;
+	font-weight: 300;
+	margin-bottom: 10%;
+	text-transform: none;
+}
+.sheet-music p {
+	color: #6c7279;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 7%;
+}
+.sheet-music-content {
+	margin: 50px;
+}
+.sheet-music-content li a {
+	color: #6c7279;
+	line-height: 30px;
+}
+.sheet-music-content li a:hover {
+	color: #000;
 }
 /* ------------------------------------------------------------------------------
 	 Footer
