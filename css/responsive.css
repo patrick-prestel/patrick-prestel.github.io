@@ -107,4 +107,13 @@
 	background-color: #f2f2f2;
 	padding: 6%;
 }
+.section {
+  padding: 40px 0;
+}
+#home {
+  padding: 100px 0;
+}
+.sheet-music-content, .soulfood-content, .workshops-content {
+  margin: 10px;
+}
 }
