@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	// Page Scroll
 	var sections = $('section')
-		nav = $('nav[role="navigation", .header-content');
+		nav = $('nav[role="navigation"], .header-content');
 
 	$(window).on('scroll', function () {
 	  	var cur_pos = $(this).scrollTop();
