@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	// Page Scroll
 	var sections = $('section')
-		nav = $('nav[role="navigation"], .header-content');
+		nav = $('nav[role="navigation"]');
 
 	$(window).on('scroll', function () {
 	  	var cur_pos = $(this).scrollTop();
@@ -34,6 +34,16 @@ $(document).ready(function() {
 	  	});
 	});
 	nav.find('a').on('click', function () {
+	  	var $el = $(this)
+	    	id = $el.attr('href');
+		$('html, body').animate({
+			scrollTop: $(id).offset().top - 75
+		}, 500);
+	  return false;
+	});
+
+
+	$('.header-content .logo').on('click', function () {
 	  	var $el = $(this)
 	    	id = $el.attr('href');
 		$('html, body').animate({
