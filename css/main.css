@@ -454,6 +454,7 @@ ul li {
 	margin: auto;
 	background-color: #333;
 	position: relative;
+	margin-top: 100px;
 }
 .workshops-content {
 	margin: 50px;
