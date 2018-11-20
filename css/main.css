@@ -383,24 +383,24 @@ ul li {
 	color: #000;
 }
 /* ------------------------------------------------------------------------------
-	 Vita
+	 Projekte
 -------------------------------------------------------------------------------*/
-#vita {
+#projekte {
 	width: 100%;
 	margin: auto;
 }
-#vita * {
+#projekte * {
 	z-index: 2;
 }
-.vita .carousel {
+.projekte .carousel {
 	width: 94%;
 	height: 500px;
 	margin: auto;
 }
-.vita .item, .vita .active,.vita .carousel-inner {
+.projekte .item, .vita .active,.vita .carousel-inner {
 	height: 100%;
 }
-.vita .carousel-caption {
+.projekte .carousel-caption {
 	bottom: 40%;
 	color: #fff;
 	left: 15%;
@@ -411,7 +411,7 @@ ul li {
 	text-align: left;
 	z-index: 10;
 }
-.vita .carousel-caption h3 {
+.projekte .carousel-caption h3 {
 	font-family: "Open Sans", sans-serif;
 	color: #2d3033;
 	text-shadow: none;
@@ -420,7 +420,7 @@ ul li {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
-.vita .carousel-caption p {
+.projekte .carousel-caption p {
 	font-family: "Open Sans", sans-serif;
 	color: #6c7279;
 	text-shadow: none;
@@ -428,7 +428,7 @@ ul li {
 	font-weight: 400;
 	letter-spacing: 2px;
 }
-.vita .carousel-caption li {
+.projekte .carousel-caption li {
 	font-family: "Open Sans", sans-serif;
 	color: #6c7279;
 	text-shadow: none;
@@ -436,13 +436,13 @@ ul li {
 	font-weight: 400;
 	letter-spacing: 2px;
 }
-.vita .carousel-control.left {
+.projekte .carousel-control.left {
 	background: none;
 }
-.vita .carousel-control.right {
+.projekte .carousel-control.right {
 	background: none;
 }
-.vita .carousel-control {
+.projekte .carousel-control {
 	opacity: 1;
 	text-shadow: none;
 }
