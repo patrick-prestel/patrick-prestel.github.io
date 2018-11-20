@@ -347,39 +347,39 @@ ul li {
 	text-shadow: none;
 }
 /* ------------------------------------------------------------------------------
-	 Soulfood
+	Vita
 -------------------------------------------------------------------------------*/
-.soulfood {
+.vita {
 	width: 94%;
 	margin: auto;
 	background-color: #f2f2f2;
 }
-.soulfood h4 {
+.vita h4 {
 	font-size: 33px;
 	line-height: 33px;
 	letter-spacing: 2px;
 	font-weight: 300;
 }
-.soulfood h5 {
+.vita h5 {
 	font-size: 21px;
 	font-weight: 300;
 	margin-bottom: 10%;
 	text-transform: none;
 }
-.soulfood p {
+.vita p {
 	color: #6c7279;
 	font-size: 13px;
 	font-weight: 400;
 	margin-top: 7%;
 }
-.soulfood-content {
+.vita-content {
 	margin: 50px;
 }
-.soulfood-content li a {
+.vita-content li a {
 	color: #6c7279;
 	line-height: 30px;
 }
-.soulfood-content li a:hover {
+.vita-content li a:hover {
 	color: #000;
 }
 /* ------------------------------------------------------------------------------
