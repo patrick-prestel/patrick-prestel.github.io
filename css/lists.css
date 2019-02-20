@@ -1,9 +1,0 @@
-ul.list li {
-  list-style: disc outside none;
-  margin-left: 2em;
-  margin-top: 0.4em;
-}
-
-ul.list li a {
-  text-decoration: underline;
-}
