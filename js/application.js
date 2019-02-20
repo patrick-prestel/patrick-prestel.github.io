@@ -1,11 +1,21 @@
+function showproject(projectid) {
+  $("#project-description .content").hide();
+  $("#project-description " + projectid).show();
+}
+
 $(document).ready(function() {
 
-  // Check for click events on the navbar burger icon
+  // Navbar burger
   $(".navbar-burger").click(function() {
-
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
       $(".navbar-burger").toggleClass("is-active");
       $(".navbar-menu").toggleClass("is-active");
-
   });
+
+  // Project descriptions
+  showproject("#soulfood-delight");
+
+  $("#projectnav a").click(function() {
+    showproject($(this).data("target"));
+  });
+
 });
