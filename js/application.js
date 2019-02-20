@@ -1,6 +1,6 @@
 function showproject(projectid) {
   $("#project-description .content").hide();
-  $("#project-description " + projectid).show();
+  $("#project-description " + projectid).fadeIn("slow");
 }
 
 $(document).ready(function() {
