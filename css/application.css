@@ -6,6 +6,24 @@ span.small {
   min-height: 50vh;
 }
 
+#project-description .content {
+  display: none;
+}
+
+#project-description .content:first-child {
+  display: block;
+}
+
+#quotes .media {
+  border-top: none;
+  margin-top: 0;
+  display: none;
+}
+
+#quotes .media:first-child {
+  display: flex;
+}
+
 .footer {
   background-color: #333;
   color: #ccc;
