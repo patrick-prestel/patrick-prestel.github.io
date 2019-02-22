@@ -12,10 +12,8 @@ var quotes = ["#quote-1", "#quote-2", "#quote-3"];
 function cycle_quotes(n = 0) {
   showquote(quotes[n]);
   if (n >= quotes.length - 1) {
-    console.log("Showing quote " + quotes[0]);
     setTimeout(function() { cycle_quotes(0); }, 5000);
   } else {
-    console.log("Showing quote " + quotes[n+1]);
     setTimeout(function() { cycle_quotes(n+1); }, 5000);
   }
 }
