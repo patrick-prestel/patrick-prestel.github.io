@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <link rel="stylesheet" href="css/application.css">
-    <script defer src="js/jquery.js"></script>
-    <script defer src="js/fontawesome-all.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/fontawesome-all.js"></script>
     <script defer src="js/smooth-scroll.js"></script>
+    <script defer src="js/send-email.js"></script>
     <script defer src="js/application.js"></script>
   </head>
   <body>
@@ -321,42 +323,45 @@
                 <h1 class="title">Kontakt</h1>
                 <p>Hier kannst du mir eine Nachricht schreiben.</p>
                 <p>Ich freue mich von Dir zu hören!</p>
+                <p>E-Mail: <a href="mailto:&#109;&#097;&#105;&#108;&#064;&#112;&#097;&#116;&#114;&#105;&#099;&#107;&#045;&#112;&#114;&#101;&#115;&#116;&#101;&#108;&#046;&#100;&#101;">&#109;&#097;&#105;&#108;&#064;&#112;&#097;&#116;&#114;&#105;&#099;&#107;&#045;&#112;&#114;&#101;&#115;&#116;&#101;&#108;&#046;&#100;&#101;</a></p>
                 <p>Liebe Grüße Patrick</p>
               </div>
             </div>
             <div class="column">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Name">
+              <form id="contact-email">
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" id="name" placeholder="Name">
+                  </div>
                 </div>
-              </div>
 
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="E-Mail">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" id="email" placeholder="E-Mail">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div class="field">
-                <label class="label">Nachricht</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Hier kannst Du mir was schreiben"></textarea>
+                <div class="field">
+                  <label class="label">Nachricht</label>
+                  <div class="control">
+                    <textarea class="textarea" id="body" placeholder="Hier kannst Du mir was schreiben"></textarea>
+                  </div>
                 </div>
-              </div>
 
-              <div class="field is-grouped">
-                <div class="control">
-                  <button class="button is-link">Abschicken</button>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link" id="submit">Abschicken</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-text" id="abort">Abbruch</button>
+                  </div>
                 </div>
-                <div class="control">
-                  <button class="button is-text">Abbruch</button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>

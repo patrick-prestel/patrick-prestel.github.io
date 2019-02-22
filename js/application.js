@@ -3,19 +3,19 @@ function showproject(projectid) {
   $("#project-description " + projectid).fadeIn("slow");
 }
 
-function showquote(quoteid) {
+function showquote(quote) {
   $("#quotes .media").hide();
-  $("#quotes " + quoteid).css("display", "flex").hide().fadeIn("slow");
+  $(quote).css("display", "flex").hide().fadeIn("slow");
 }
 
-var quotes = ["#quote-1", "#quote-2", "#quote-3"];
+var quotes = [];
+$("#quotes").children().each(function(idx, e) { quotes.push(e) });
+
 function cycle_quotes(n = 0) {
   showquote(quotes[n]);
   if (n >= quotes.length - 1) {
-    console.log("Showing quote " + quotes[0]);
     setTimeout(function() { cycle_quotes(0); }, 5000);
   } else {
-    console.log("Showing quote " + quotes[n+1]);
     setTimeout(function() { cycle_quotes(n+1); }, 5000);
   }
 }
