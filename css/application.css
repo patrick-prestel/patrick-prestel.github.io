@@ -2,6 +2,14 @@ span.small {
   font-size: 0.75rem;
 }
 
+.content a {
+  text-decoration: underline;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+
 #project-description {
   min-height: 50vh;
 }
