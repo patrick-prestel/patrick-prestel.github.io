@@ -4,7 +4,7 @@ function showproject(projectid) {
 }
 
 function showquote(quote) {
-  $("#quotes .media").hide();
+  $("#quotes").children().hide();
   $(quote).css("display", "flex").hide().fadeIn("slow");
 }
 
