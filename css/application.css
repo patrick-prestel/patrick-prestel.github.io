@@ -1,3 +1,23 @@
+/*
+ * Base colours:
+ *
+ * pp dunkelblau:
+ * cmyk: c86, m61, y45, k41
+ * rgb: r41, g67, b83
+ * hex: #294353
+ *
+ * pp hellblau:
+ * cmyk:c66, m36, y26, k8
+ * rgb: r96, g135, b158
+ * hex: #60879e
+ *
+ * pp hellgrün:
+ * cmyk: c50, m15, y100, k0
+ * rgb: r150, g174, b36
+ * hex: #96ae24
+ *
+ */
+
 span.small {
   font-size: 0.75rem;
 }
