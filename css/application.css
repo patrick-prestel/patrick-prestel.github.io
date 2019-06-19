@@ -18,6 +18,24 @@
  *
  */
 
+@font-face {
+  font-family: Anton;
+  src: url(../fonts/anton/Anton-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+.title {
+  font-family: Anton;
+}
+
+p {
+  font-family: Roboto;
+}
+
 span.small {
   font-size: 0.75rem;
 }
