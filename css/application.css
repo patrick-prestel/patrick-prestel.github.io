@@ -32,12 +32,29 @@
   font-family: Anton;
 }
 
-.title {
+h1.title, h2,title {
   font-family: Anton;
+}
+
+h1.title {
+  position: absolute;
+  padding: 1rem;
+  left: -50rem;
+  padding-left: 50rem;
+  background-color: #294353;
+  color: #fff !important;
+}
+
+h1.title + * {
+  margin-top: 6rem;
 }
 
 p {
   font-family: Roboto;
+}
+
+#willkommen p {
+  max-width: 500px;
 }
 
 span.small {
