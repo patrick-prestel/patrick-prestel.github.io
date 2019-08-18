@@ -46,6 +46,17 @@
   vertical-align: middle;
 }
 
+.navbar-end {
+  vertical-align: bottom;
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.navbar-end .navbar-item {
+  padding-bottom: 25px;
+}
+
 h1.title, h2,title {
   font-family: Anton;
 }
