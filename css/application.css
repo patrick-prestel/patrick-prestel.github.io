@@ -32,6 +32,12 @@
   font-family: Anton;
 }
 
+.navbar-brand img {
+  max-height: 75px;
+  height: 75px;
+  margin: 10px 100px;
+}
+
 h1.title, h2,title {
   font-family: Anton;
 }
