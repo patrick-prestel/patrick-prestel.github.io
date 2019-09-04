@@ -133,3 +133,17 @@ span.small {
 .footer a {
   color: #ccc;
 }
+
+#willkommen {
+  background-color: #60879e !important;
+  background: url('../img/background-home.jpg') top left no-repeat;
+}
+
+.hero-body.with-banner {
+  margin-top: 330px;
+  flex-grow: 0;
+}
+
+html {
+  max-width: 1840px;
+}
