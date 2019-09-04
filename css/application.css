@@ -113,6 +113,13 @@ span.small {
   min-height: 50vh;
 }
 
+@media only screen and (min-width: 785px) {
+  #project-description {
+    position: relative;
+    top: -300px;
+  }
+}
+
 #project-description .content {
   display: none;
 }
