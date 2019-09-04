@@ -46,6 +46,13 @@
   vertical-align: middle;
 }
 
+img.title-initial {
+  height: 2.75rem;
+  position: relative;
+  top: 7px;
+  margin-right: 7px;
+}
+
 .navbar-end {
   vertical-align: bottom;
   display: flex;
@@ -68,6 +75,14 @@ h1.title {
   padding-left: 50rem;
   background-color: #294353;
   color: #fff !important;
+}
+
+h1.title.light {
+  background-color: #60879e;
+}
+
+ul.light {
+  color: #fff;
 }
 
 h1.title + * {
@@ -137,6 +152,11 @@ span.small {
 #willkommen {
   background-color: #60879e !important;
   background: url('../img/background-home.jpg') top left no-repeat;
+}
+
+#projekte {
+  background-color: #294353 !important;
+  background: url('../img/background-projekte.jpg') top left no-repeat;
 }
 
 .hero-body.with-banner {
