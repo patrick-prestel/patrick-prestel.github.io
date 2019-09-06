@@ -71,15 +71,16 @@ img.title-initial {
 
 h1.title, h2,title {
   font-family: Anton;
+  color: #fff !important;
 }
 
 h1.title {
   position: absolute;
   padding: 1rem;
   left: -50rem;
+  top: -65px;
   padding-left: 50rem;
   background-color: #294353;
-  color: #fff !important;
 }
 
 h1.title.light {
@@ -161,41 +162,47 @@ span.small {
   color: #ccc;
 }
 
+.hero.is-fullheight-with-navbar {
+  min-height: calc(100vh - 100vw*0.225 - 4rem);
+}
+
+.hero.is-fullheight-with-navbar .hero-body {
+  align-items: initial !important;
+  padding-top: 40px;
+}
+
 #willkommen {
   background-color: #60879e !important;
-  background: url('../img/background-home.jpg') top left no-repeat;
 }
 
 #projekte {
   background-color: #294353 !important;
-  background: url('../img/background-projekte.jpg') top left no-repeat;
 }
 
 #workshops {
   background-color: #60879e !important;
-  background: url('../img/background-workshops.jpg') top left no-repeat;
 }
 
 #noten {
   background-color: #294353 !important;
-  background: url('../img/background-noten.jpg') top left no-repeat;
 }
 
 #vita {
   background-color: #60879e !important;
-  background: url('../img/background-vita.jpg') top left no-repeat;
 }
 
 #kontakt {
   background-color: #294353 !important;
-  background: url('../img/background-kontakt.jpg') top left no-repeat;
-}
-
-.hero-body.with-banner {
-  margin-top: 330px;
-  flex-grow: 0;
 }
 
 html {
   max-width: 1840px;
+}
+
+#spacer {
+  min-height: 85px;
+}
+
+img.bg {
+  margin-bottom: -10px;
 }
