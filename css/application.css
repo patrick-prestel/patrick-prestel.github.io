@@ -33,6 +33,10 @@
   font-size: 1.2rem;
 }
 
+a.navbar-item:hover {
+  color: #4a4a4a;
+}
+
 .navbar-brand img {
   max-height: 75px;
   height: 75px;
@@ -51,6 +55,7 @@ img.title-initial {
   position: relative;
   top: 7px;
   margin-right: 7px;
+  margin-top: -7px;
 }
 
 .navbar-end {
@@ -81,7 +86,7 @@ h1.title.light {
   background-color: #60879e;
 }
 
-ul.light {
+ul.light, .content.light {
   color: #fff;
 }
 
@@ -164,6 +169,11 @@ span.small {
 #projekte {
   background-color: #294353 !important;
   background: url('../img/background-projekte.jpg') top left no-repeat;
+}
+
+#workshops {
+  background-color: #60879e !important;
+  background: url('../img/background-workshops.jpg') top left no-repeat;
 }
 
 .hero-body.with-banner {
