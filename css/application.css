@@ -92,7 +92,7 @@ ul.light, .content.light, i.light {
 }
 
 h1.title + * {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 p {
