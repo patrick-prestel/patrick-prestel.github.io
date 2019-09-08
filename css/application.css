@@ -215,4 +215,5 @@ html {
 
 img.bg {
   margin-bottom: -10px;
+  min-width: 500px;
 }
