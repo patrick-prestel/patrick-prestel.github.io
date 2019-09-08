@@ -41,6 +41,10 @@ a {
   color: inherit;
 }
 
+.menu-list a:hover {
+  background-color: #60879e;
+}
+
 @media screen and (min-width: 1088px) {
   .navbar-brand img {
     max-height: 50px;
