@@ -59,9 +59,9 @@ a {
 
 @media screen and (max-width: 1087px) {
   .navbar-brand img {
-    max-height: 30px;
-    height: 30px;
-    margin: 10px 30px;
+    max-height: 40px;
+    height: 40px;
+    margin: 5px 30px;
   }
 
   #spacer {
@@ -100,7 +100,7 @@ h1.title {
   position: absolute;
   padding: 1rem;
   left: -50rem;
-  top: -65px;
+  top: -75px;
   padding-left: 50rem;
   background-color: #294353;
 }
