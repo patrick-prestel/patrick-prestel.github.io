@@ -223,6 +223,7 @@ span.small {
 
 html {
   max-width: 1840px;
+  min-width: 500px;
 }
 
 img.bg {
