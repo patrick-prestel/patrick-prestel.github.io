@@ -83,6 +83,10 @@ a {
   }
 }
 
+a.navbar-item.active {
+  text-decoration: underline;
+}
+
 img.title-initial {
   height: 2.75rem;
   position: relative;
@@ -114,7 +118,7 @@ ul.light, .content.light, i.light {
 }
 
 h1.title + * {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 p {

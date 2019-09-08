@@ -34,3 +34,23 @@ $('a[href*="#"]')
       }
     }
   });
+
+$(document).scroll(function(){
+  var st = $(this).scrollTop() + $("#spacer").height();
+
+  $("img.bg").each(function() {
+    var this_top = $(this).offset().top;
+    if ($("img.bg").index($(this)) >= $("img.bg").size() - 1) {
+      var next_top = 100000000;
+    } else {
+      var next_top = $("img.bg").eq( $("img.bg").index( $(this) ) + 1 ).offset().top;
+    }
+    if (st > this_top && st <= next_top) {
+      var id = $(this).attr('id');
+      $('a[href="#'+id+'"]').addClass('active');
+    } else {
+      var id = $(this).attr('id');
+      $('a[href="#'+id+'"]').removeClass('active');
+    }
+  });
+});
