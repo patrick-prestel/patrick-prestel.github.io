@@ -221,6 +221,15 @@ span.small {
   background-color: #294353 !important;
 }
 
+#project-description {
+  max-width: 680px;
+}
+
+#project-description img {
+  display: block;
+  margin: 0 auto;
+}
+
 html {
   max-width: 1840px;
 }
