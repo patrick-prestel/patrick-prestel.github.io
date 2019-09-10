@@ -45,6 +45,13 @@ a {
   background-color: #60879e;
 }
 
+@media only screen and (min-width: 785px) {
+  #project-description {
+    position: relative;
+    top: -300px;
+  }
+}
+
 @media screen and (min-width: 1088px) {
   .navbar-brand img {
     max-height: 50px;
@@ -54,6 +61,15 @@ a {
 
   #spacer {
     min-height: 85px;
+  }
+
+  .navbar-end .navbar-item {
+    padding-bottom: 20px;
+    align-items: flex-end;
+  }
+
+  a.navbar-item.active {
+    box-shadow: inset 0 -5px 0 currentColor;
   }
 }
 
@@ -74,17 +90,6 @@ a {
   max-height: 25px;
   margin-right: 7px;
   vertical-align: middle;
-}
-
-@media screen and (min-width: 1088px) {
-  .navbar-end .navbar-item {
-    padding-bottom: 20px;
-    align-items: flex-end;
-  }
-
-  a.navbar-item.active {
-    box-shadow: inset 0 -5px 0 currentColor;
-  }
 }
 
 img.title-initial {
@@ -145,13 +150,6 @@ span.small {
   min-height: 50vh;
 }
 
-@media only screen and (min-width: 785px) {
-  #project-description {
-    position: relative;
-    top: -300px;
-  }
-}
-
 #project-description .content {
   display: none;
 }
@@ -197,27 +195,11 @@ span.small {
   padding-top: 40px;
 }
 
-#willkommen {
+section:nth-of-type(odd) {
   background-color: #60879e !important;
 }
 
-#projekte {
-  background-color: #294353 !important;
-}
-
-#workshops {
-  background-color: #60879e !important;
-}
-
-#noten {
-  background-color: #294353 !important;
-}
-
-#vita {
-  background-color: #60879e !important;
-}
-
-#kontakt {
+section:nth-of-type(even) {
   background-color: #294353 !important;
 }
 
