@@ -8,15 +8,29 @@ function showquote(quote) {
   $(quote).css("display", "flex").hide().fadeIn("slow");
 }
 
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop() + $("#spacer").height();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
 var quotes = [];
 $("#quotes").children().each(function(idx, e) { quotes.push(e) });
 
 function cycle_quotes(n = 0) {
-  showquote(quotes[n]);
-  if (n >= quotes.length - 1) {
-    setTimeout(function() { cycle_quotes(0); }, 5000);
+  if ($('#quotes').isInViewport()) {
+    showquote(quotes[n]);
+    if (n >= quotes.length - 1) {
+      setTimeout(function() { cycle_quotes(0); }, 2000);
+    } else {
+      setTimeout(function() { cycle_quotes(n+1); }, 2000);
+    }
   } else {
-    setTimeout(function() { cycle_quotes(n+1); }, 5000);
+    setTimeout(function() { cycle_quotes(n); }, 2000);
   }
 }
 
@@ -35,6 +49,7 @@ $(document).ready(function() {
 
   // Project descriptions
   showproject("#soulfood-delight");
+  showquote(quotes[0]);
   cycle_quotes();
 
   $("#projectnav a").click(function() {
