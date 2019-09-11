@@ -118,6 +118,22 @@ h1.title.light {
   background-color: #60879e;
 }
 
+.hero.is-fullheight-with-navbar.no-bg-image {
+  min-height: calc(100vh - 4rem);
+}
+
+.no-bg-image h1.title {
+  top: 0;
+}
+
+.no-bg-image h1.title + * {
+  margin-top: 6rem;
+}
+
+.light h4, .light h5 {
+  color: inherit;
+}
+
 ul.light, .content.light, i.light {
   color: #fff;
 }
