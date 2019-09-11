@@ -52,6 +52,9 @@ img.bg {
   margin-bottom: -10px; 
   margin-top: -85px; 
   padding-top: 85px;
+  pointer-events: none;
+  border: none;
+  outline: none;
 }
 
 #spacer { min-height: 85px; }
@@ -147,9 +150,6 @@ h1.title {
 h2.title {
   font-family: Anton;
   color: #fff !important;
-}
-
-img.bg + section h1.title {
 }
 
 .no-bg-image h1.title {
