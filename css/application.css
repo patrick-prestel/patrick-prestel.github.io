@@ -18,6 +18,10 @@
  *
  */
 
+/*
+ * Fonts
+ */
+
 @font-face {
   font-family: Anton;
   src: url(../fonts/anton/Anton-Regular.ttf);
@@ -28,13 +32,35 @@
   src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 
+/*
+ * Sections with images
+ */
+
+html { max-width: 1840px; } 
+
 section:nth-of-type(odd)    { background-color: #60879e !important; }
 section:nth-of-type(odd) h1 { background-color: #294353 !important; }
 
 section:nth-of-type(even)    { background-color: #294353 !important; }
 section:nth-of-type(even) h1 { background-color: #60879e !important; }
 
-.navbar-item {
+img.bg + .hero.is-fullheight-with-navbar {
+  min-height: calc(100vh - 100vw*0.225 - 3rem);
+}
+
+img.bg { 
+  margin-bottom: -10px; 
+  margin-top: -85px; 
+  padding-top: 85px;
+}
+
+#spacer { min-height: 85px; }
+
+/*
+ * Navbar
+ */
+
+a.navbar-item {
   font-family: Anton;
   font-size: 1.0rem;
 }
@@ -43,13 +69,16 @@ a.navbar-item:hover {
   color: #4a4a4a;
 }
 
-a {
-  color: inherit;
+.navbar-initial img {
+  height: 25px;
+  max-height: 25px;
+  margin-right: 7px;
+  vertical-align: middle;
 }
 
-.menu-list a:hover {
-  background-color: #60879e;
-}
+/*
+ * Responsive
+ */
 
 @media only screen and (min-width: 785px) {
   #project-description {
@@ -63,10 +92,6 @@ a {
     max-height: 50px;
     height: 50px;
     margin: 10px 50px;
-  }
-
-  #spacer {
-    min-height: 85px;
   }
 
   .navbar-end .navbar-item {
@@ -89,14 +114,17 @@ a {
   #spacer {
     min-height: 65px;
   }
+
+  img.bg { 
+    margin-bottom: -10px; 
+    margin-top: -65px; 
+    padding-top: 65px;
+  }
 }
 
-.navbar-initial img {
-  height: 25px;
-  max-height: 25px;
-  margin-right: 7px;
-  vertical-align: middle;
-}
+/*
+ * Headings
+ */
 
 img.title-initial {
   height: 2.75rem;
@@ -106,12 +134,9 @@ img.title-initial {
   margin-top: -7px;
 }
 
-h1.title, h2.title {
+h1.title {
   font-family: Anton;
   color: #fff !important;
-}
-
-h1.title {
   position: absolute;
   padding: 1rem;
   left: -50rem;
@@ -119,8 +144,12 @@ h1.title {
   padding-left: 50rem;
 }
 
-.hero.is-fullheight-with-navbar.no-bg-image {
-  min-height: calc(100vh - 4rem);
+h2.title {
+  font-family: Anton;
+  color: #fff !important;
+}
+
+img.bg + section h1.title {
 }
 
 .no-bg-image h1.title {
@@ -203,10 +232,6 @@ span.small {
   color: #ccc;
 }
 
-.hero.is-fullheight-with-navbar {
-  min-height: calc(100vh - 100vw*0.225 - 4rem);
-}
-
 .hero.is-fullheight-with-navbar .hero-body {
   align-items: initial !important;
   padding-top: 40px;
@@ -221,10 +246,7 @@ span.small {
   margin: 0 auto;
 }
 
-html {
-  max-width: 1840px;
+.menu-list a:hover {
+  background-color: #60879e;
 }
 
-img.bg {
-  margin-bottom: -10px;
-}
