@@ -44,6 +44,11 @@ section:nth-of-type(odd) h1 { background-color: #294353 !important; }
 section:nth-of-type(even)    { background-color: #294353 !important; }
 section:nth-of-type(even) h1 { background-color: #60879e !important; }
 
+.hero.is-fullheight-with-navbar .hero-body {
+  align-items: initial !important;
+  padding-top: 40px;
+}
+
 img.bg + .hero.is-fullheight-with-navbar {
   min-height: calc(100vh - 100vw*0.225 - 3rem);
 }
@@ -160,21 +165,33 @@ h2.title {
   margin-top: 6rem;
 }
 
-.light h4, .light h5 {
+.light * {
   color: inherit;
-}
-
-ul.light, .content.light, i.light {
-  color: #fff;
 }
 
 h1.title + * {
   margin-top: 1rem;
 }
 
+ul.light, .content.light, i.light {
+  color: #fff;
+}
+
 p {
   font-family: Roboto;
 }
+
+/*
+ * Links
+ */
+
+.content a { text-decoration: underline; }
+.content a:hover { text-decoration: none; }
+.menu-list a:hover { background-color: #60879e; }
+
+/*
+ * Individual section fiddling
+ */
 
 #willkommen p {
   max-width: 500px;
@@ -182,14 +199,6 @@ p {
 
 span.small {
   font-size: 0.75rem;
-}
-
-.content a {
-  text-decoration: underline;
-}
-
-.content a:hover {
-  text-decoration: none;
 }
 
 #project-description {
@@ -224,17 +233,12 @@ span.small {
 }
 
 .footer {
-  background-color: #333;
+  background-color: #222;
   color: #ccc;
 }
 
 .footer a {
   color: #ccc;
-}
-
-.hero.is-fullheight-with-navbar .hero-body {
-  align-items: initial !important;
-  padding-top: 40px;
 }
 
 #project-description {
@@ -245,8 +249,3 @@ span.small {
   display: block;
   margin: 0 auto;
 }
-
-.menu-list a:hover {
-  background-color: #60879e;
-}
-
