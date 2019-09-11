@@ -28,6 +28,12 @@
   src: url(../fonts/roboto/Roboto-Regular.ttf);
 }
 
+section:nth-of-type(odd)    { background-color: #60879e !important; }
+section:nth-of-type(odd) h1 { background-color: #294353 !important; }
+
+section:nth-of-type(even)    { background-color: #294353 !important; }
+section:nth-of-type(even) h1 { background-color: #60879e !important; }
+
 .navbar-item {
   font-family: Anton;
   font-size: 1.0rem;
@@ -100,7 +106,7 @@ img.title-initial {
   margin-top: -7px;
 }
 
-h1.title, h2,title {
+h1.title, h2.title {
   font-family: Anton;
   color: #fff !important;
 }
@@ -111,11 +117,6 @@ h1.title {
   left: -50rem;
   top: -75px;
   padding-left: 50rem;
-  background-color: #294353;
-}
-
-h1.title.light {
-  background-color: #60879e;
 }
 
 .hero.is-fullheight-with-navbar.no-bg-image {
@@ -209,14 +210,6 @@ span.small {
 .hero.is-fullheight-with-navbar .hero-body {
   align-items: initial !important;
   padding-top: 40px;
-}
-
-section:nth-of-type(odd) {
-  background-color: #60879e !important;
-}
-
-section:nth-of-type(even) {
-  background-color: #294353 !important;
 }
 
 #project-description {
