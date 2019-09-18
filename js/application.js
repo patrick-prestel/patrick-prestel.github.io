@@ -25,12 +25,12 @@ function cycle_quotes(n = 0) {
   if ($('#quotes').isInViewport()) {
     showquote(quotes[n]);
     if (n >= quotes.length - 1) {
-      setTimeout(function() { cycle_quotes(0); }, 2000);
+      setTimeout(function() { cycle_quotes(0); }, 10000);
     } else {
-      setTimeout(function() { cycle_quotes(n+1); }, 2000);
+      setTimeout(function() { cycle_quotes(n+1); }, 10000);
     }
   } else {
-    setTimeout(function() { cycle_quotes(n); }, 2000);
+    setTimehout(function() { cycle_quotes(n); }, 10000);
   }
 }
 
@@ -49,8 +49,12 @@ $(document).ready(function() {
 
   // Project descriptions
   showproject("#soulfood-delight");
-  showquote(quotes[0]);
-  cycle_quotes();
+
+  // Quotes
+  if ($("#quotes").length) {
+    showquote(quotes[0]);
+    cycle_quotes();
+  }
 
   $("#projectnav a").click(function() {
     showproject($(this).data("target"));
