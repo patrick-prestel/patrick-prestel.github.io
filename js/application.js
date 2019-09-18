@@ -30,7 +30,7 @@ function cycle_quotes(n = 0) {
       setTimeout(function() { cycle_quotes(n+1); }, 10000);
     }
   } else {
-    setTimehout(function() { cycle_quotes(n); }, 10000);
+    setTimeout(function() { cycle_quotes(n); }, 10000);
   }
 }
 
