@@ -150,6 +150,10 @@ h1.title {
   left: -50rem;
   top: -75px;
   padding-left: 50rem;
+  max-width: calc(50rem + 100%);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h2.title {
@@ -166,7 +170,7 @@ h2.title {
 }
 
 .light * {
-  color: inherit;
+  color: inherit !important;
 }
 
 h1.title + * {
