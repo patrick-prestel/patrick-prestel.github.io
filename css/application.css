@@ -245,8 +245,9 @@ span.small {
   color: #ccc;
 }
 
-#project-description {
-  max-width: 680px;
+.container {
+  max-width: 1000px;
+  margin-left: 1.5rem;
 }
 
 #project-description img {
