@@ -217,23 +217,25 @@ span.small {
   display: block;
 }
 
-#quotes .media {
-  border-top: none;
-  margin-top: 0;
-  display: none;
-}
-
-#quotes .media:first-child {
-  display: flex;
-}
-
 #quotes .title {
   font-size: 0.90rem;
   line-height: 1.4;
-  }
+}
 
 #quotes .subtitle {
   font-size: 0.80rem;
+}
+
+#news .title {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #000 !important;
+}
+
+#news .subtitle {
+  font-size: 0.90rem;
+  margin-top: 10px;
+  color: #333 !important;
 }
 
 .footer {

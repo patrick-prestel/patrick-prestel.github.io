@@ -8,6 +8,11 @@ function showquote(quote) {
   $(quote).css("display", "flex").hide().fadeIn("slow");
 }
 
+function shownews(newsitem) {
+  $("#news").children().hide();
+  $(newsitem).css("display", "flex").hide().fadeIn("slow");
+}
+
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
@@ -21,6 +26,9 @@ $.fn.isInViewport = function() {
 var quotes = [];
 $("#quotes").children().each(function(idx, e) { quotes.push(e) });
 
+var newsitems = [];
+$("#news").children().each(function(idx, e) { newsitems.push(e) });
+
 function cycle_quotes(n = 0) {
   if ($('#quotes').isInViewport()) {
     showquote(quotes[n]);
@@ -31,6 +39,19 @@ function cycle_quotes(n = 0) {
     }
   } else {
     setTimeout(function() { cycle_quotes(n); }, 10000);
+  }
+}
+
+function cycle_news(n = 0) {
+  if ($('#news').isInViewport()) {
+    shownews(newsitems[n]);
+    if (n >= newsitems.length - 1) {
+      setTimeout(function() { cycle_news(0); }, 10000);
+    } else {
+      setTimeout(function() { cycle_news(n+1); }, 10000);
+    }
+  } else {
+    setTimeout(function() { cycle_news(n); }, 10000);
   }
 }
 
@@ -54,6 +75,12 @@ $(document).ready(function() {
   if ($("#quotes").length) {
     showquote(quotes[0]);
     cycle_quotes();
+  }
+
+  // News
+  if ($("#news").length) {
+    shownews(newsitems[0]);
+    cycle_news();
   }
 
   $("#projectnav a").click(function() {
