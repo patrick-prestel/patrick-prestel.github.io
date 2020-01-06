@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html has-navbar-fixed-top>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patrick Prestel</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/application.css">
+    <script src="js/jquery.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+    <script defer src="js/smooth-scroll.js"></script>
+    <script defer src="js/send-email.js"></script>
+    <script defer src="js/application.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#willkommen"><img src="img/logo.svg"></a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item" href="#aktuelles">
+            <span class="navbar-initial"><img src="img/icons/a.svg"></span>
+            Aktuelles
+          </a>
+          <a class="navbar-item" href="#projekte">
+            <span class="navbar-initial"><img src="img/icons/p.svg"></span>
+            Projekte
+          </a>
+          <a class="navbar-item" href="#workshops">
+            <span class="navbar-initial"><img src="img/icons/w.svg"></span>
+            Workshops
+          </a>
+          <a class="navbar-item" href="#noten">
+            <span class="navbar-initial"><img src="img/icons/n.svg"></span>
+            Noten
+          </a>
+          <a class="navbar-item" href="#vita">
+            <span class="navbar-initial"><img src="img/icons/v.svg"></span>
+            Vita
+          </a>
+          <a class="navbar-item" href="#kontakt">
+            <span class="navbar-initial"><img src="img/icons/k.svg"></span>
+            Kontakt
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="spacer"></div>
+    <img class="bg" id="willkommen" src="img/backgrounds/home.jpg">
+    <section class="hero is-bold is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <div class="content light">
+            <h1 class="title">Patrick Prestel</h1>
+            <h2 class="title">Willkommmen auf meiner Homepage</h2>
+            <p>Hier kannst Du mehr über mich erfahren.</p>
+            <p>&nbsp;</p>
+            <p>Ich leite Chöre, schreibe Arrangements, singe, beatboxe und spiele Gitarre. Viel Spaß beim Stöbern und falls Du eine Frage hast, freu ich mich über eine <a target="_blank" href="#kontakt">Nachricht</a> von Dir.</p>
+            <p>&nbsp;</p>
+            <p>Liebe Grüße, Patrick</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img class="bg" id="aktuelles" src="img/backgrounds/aktuelles.jpg">
+    <section class="hero is-light is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img class="title-initial" src="img/icons/a-light.svg">
+            Aktuelles
+          </h1>
+          <div class="columns">
+            <div class="column">
+              <div class="content light">
+                <div class="column">
+                  <div id="quotes">
+                    <div class="card" id="quote-01">
+                      <div class="card-content">
+                        <p class="title">
+                          “Pop- und Jazzsänger, Vocal Groups, Chöre und Chorleiter aus dem Pop- und Jazzbereich profitieren enorm von Patricks Workshops. Sein umfassendes Know-How zum a-cappella Sound, Arrangements, Groove, Phrasing und Beatbox vermittelt er in entspannt humorvoller Art. Wir freuen uns auf seinen nächsten Workshop bei uns in der MusicAcademy!”
+                        </p>
+                        <p class="subtitle">
+                          Steffi Rothenbücher, Music Academy München
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" id="quote-02">
+                      <div class="card-content">
+                        <p class="title">
+                        "Wir hatten die Gelegenheit für unser zweites Album "Everytime" mit Patrick zusammenzuarbeiten. Dabei hat er nicht nur einen Song für uns arrangiert, sondern uns auch einen Tag bei unseren Proben begleitet. Für uns ist der Spagat zwischen klassischer Vokalmusik und modernen Popsongs immer wieder eine große Herausforderung. Patrick war daher mit seiner Erfahrung, seiner Begeisterung, seiner Expertise und nicht zu letzt mit seinem Spaß für uns die ideale Ergänzung. Wir würden ihn jederzeit weiterempfehlen."
+                        </p>
+                        <p class="subtitle">
+                          Ensemble Quartonal
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card" id="quote-03">
+                      <div class="card-content">
+                        <p class="title">
+                          “Mit faszinierend ruhiger Stimme brachte Patrick meinen Sängerinnen und Sängern Tricks des Popgesangs bei, zeigte body percussion und interpretierte selbst bekannte Musik so selbstverständlich neu, dass meine Choris sich ohne Schwierigkeiten und sogar gerne darauf einlassen konnten! Immer eine Empfehlung für moderne Chormusik, fernab eingetrampelter Pfade.”
+                        </p>
+                        <p class="subtitle">
+                          Michael "Mike" Frey, Chorleiter München
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img class="bg" id="projekte" src="img/backgrounds/projekte.jpg">
+    <section class="hero is-light is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img class="title-initial" src="img/icons/p-light.svg">
+            Projekte
+          </h1>
+          <div class="columns">
+            <div class="column is-one-quarter">
+              <aside class="menu" id="projectnav">
+                <ul class="menu-list light">
+                  <li><a data-target="#soulfood-delight">// SoulFood Delight</a></li>
+                  <li><a data-target="#chamber-choir-europe">// Chamber Choir of Europe</a></li>
+                  <li><a data-target="#isartonics">// Isartonics</a></li>
+                  <li><a data-target="#chor-der-fünf-kontinente">// Chor der Fünf Kontinente</a></li>
+                  <li><a data-target="#munich-wedding-singers">// Munich Wedding Singers</a></li>
+                  <li><a data-target="#voices-in-time">// VoicesInTime</a></li>
+                  <li><a data-target="#elevator-pitch">// Elevator Pitch</a></li>
+                  <li><a data-target="#quartbreakers">// The Quartbreakers</a></li>
+                  <li><a data-target="#odd-one-out">// OddOneOut</a></li>
+                  <li><a data-target="#diverses">// Diverses</a></li>
+                </ul>
+              </aside>
+            </div>
+            <div class="column">
+              <div class="box" id="project-description">
+                <div class="content" id="soulfood-delight">
+                    <img src="img/projects/soulfood-delight.jpg">
+                    <h3 class="subtitle">// SoulFood Delight</h3>
+                  <p>
+                    SoulFood Delight ist ein gemischter a cappella Pop-Chor, den ich 2015 ins Leben gerufen haben und mit dem wir mittlerweile bis zu 15 mal im Jahr auftreten. Wir mikrofonieren Bässe und Beatbox, um einen druckvollen Sound zu erzeugen. Mit spannend arrangierten Songs von David Guetta und Taylor Swift über Sia bis hin zu Roger Cicero, Bob Dylan und Stevie Wonder möchten wir unseren Zuhörern ein wenig Futter für die Seele mitgeben.
+                  </p>
+                  <p>Infos und Videos findest du unter <a target="_blank" href="http://www.soulfooddelight.de">www.soulfooddelight.de</a></p>
+                </div>
+                <div class="content" id="chamber-choir-europe">
+                  <img src="img/projects/chamber-choir-of-europe.jpg">
+                  <h3 class="subtitle">// Chamber Choir of Europe</h3>
+                  <p>
+                    Der Chamber Choir of Europe ist ein Projektchor unter der Leitung von Nicol Matt, besetzt mit fantastischen Sängern*innen, die aus ganz Europa zusammenkommen. An folgenden Projekten habe ich mitgewirkt:
+                  </p>
+                  <ul>
+                    <li>vier Konzerte mit Bobby McFerrin auf seiner Vocabularies-Tour <a target="_blank" href="https://www.youtube.com/watch?v=UeFrhqrqFM8">(Video)</a>,</li>
+                    <li>Auftritt auf der Echo-Verleihung mit einer Hommage an David Bowie <a target="_blank" href="https://www.youtube.com/watch?v=PI86tFKxT9I&feature=youtu.be">(Video)</a>,</li>
+                    <li>Auftritte und CD-Aufnahme von Stücken von Wolf Biermann, arrangiert und dirigiert von Gunnar Eriksson <a target="_blank" href="https://www.amazon.de/Diesem-Lande-Leben-Wir/dp/B005WNF4GK">(Hörbeispiele)</a>.</li>
+                  </ul>
+                  <p><a target="_blank" href="http://https://www.chamber-choir-of-europe.eu/german/">www.chamber-choir-of-europe.eu</a></p>
+                  </p>
+                </div>
+                <div class="content" id="isartonics">
+                  <img src="img/projects/isartronics.jpg">
+                  <h3 class="subtitle">// Isartonics</h3>
+                  <p>
+                    Die Isartonics sind ein gemischter a cappella  Chor, der sich 2018 gegründet hat. Glücklicherweise habe ich das Chorleiter-Casting bestanden. Mit viel Freude und Fleiß werden nun Stücke von Robbie Williams, Pentatonix und Coldplay gesungen.
+                  </p>
+                  <p><a target="_blank" href="https://www.facebook.com/isartonics/">facebook.com/isartonics/</a></p>
+                </div>
+                <div class="content" id="chor-der-fünf-kontinente">
+                  <img src="img/projects/chor-der-fuenf-kontinente.jpg">
+                  <h3 class="subtitle">// Chor der Fünf Kontinente</h3>
+                  <p>
+                    Der Chor der Fünf Kontinente ist ein interkultureller Chor für Menschen jeder Herkunft und Hautfarbe. Sich gemeinsam musikalisch weiter zu entwickeln und voneinander zu lernen, ist eines der zentralen Anliegen. Wir sind bunt und singen international. Das Repertoire reicht von München bis Melbourne, vom Maori-Liebeslied zum skandinavischen Wiegenlied. Die Songs und ihre jeweilige kulturellen Kontexte verstehen wir nicht nur als innovativen musikalischen Input, sondern auch als Klang-Pfade zum gegenseitigen Verständnis. Seit 2019 lässt der Chor nun seine Reise von mir anleiten und ich bin gespannt, wohin sie uns führt.
+                  </p>
+                  <p><a target="_blank" href="https://www.museum-fuenf-kontinente.de/veranstaltungen/chor-der-fünf-kontinente/">Zur Homepage</a>
+                  </p>
+                </div>
+                <div class="content" id="munich-wedding-singers">
+                  <img src="img/projects/munich-wedding-singers.jpg">
+                  <h3 class="subtitle">// Munich Wedding Singers</h3>
+                  <p>
+                    Die Munich Wedding Singers sind ein freier Zusammenschluss von Sängern*innen, die auf Hochzeiten in der Kirche und/oder beim Sektempfang moderne Hochzeitslieder zum Besten geben. Die Besetzung kann nach individuellen Wünschen zusammen gestellt werden, von 2 Stimmen mit Gitarre bis zu 15 Stimmen a cappella ist alles möglich. Ebenso können Songwünsche des Brautpaares erfüllt werden.
+                  </p>
+                </div>
+                <div class="content" id="voices-in-time">
+                  <img src="img/projects/voices-in-time.jpg">
+                  <h3 class="subtitle">// VoicesInTime</h3>
+                  <p>
+                    VoicesInTime ist ein mehrfach national wie international ausgezeichneter Rock&Jazzchor, mit dem ich von 2001 bis 2017 über 200 Konzerte singen durfte und der mich wohl am meisten geprägt hat. Sein Gründer und Leiter Stefan Kalmer war bereits mein Musiklehrer in der Schule und hat mich stets gefördert. Bei VoicesInTime gab er mir die Möglichkeit meine Arrangements einzustudieren und zu dirigieren. So wurden 25 meiner Arrangements auf die Bühne gebracht, wofür ich Stefan Kalmer und VoicesInTime sehr dankbar bin. Absolute Highlights in den 16 Jahren waren u.a. der 1. Platz am Deutschen Chorwettbewerb 2006, die Konzertreisen nach Kuba, China, Südkorea, Slowenien, Niederlande und Dänemark sowie die sieben CD-Produkionen mit den Bayerischen Rundfunk.
+                  </p>
+                  <p><a target="_blank" href="https://www.voicesintime.de">www.voicesintime.de</a> VoicesInTime/Foto: Basti Arlt
+                  </p>
+                </div>
+                <div class="content" id="elevator-pitch">
+                  <img src="img/projects/elevator-pitch.jpg">
+                  <h3 class="subtitle">// Elevator Pitch</h3>
+                  <p>
+                    Von 2013-2016 sang und beatboxte ich bei der a cappella Band Elevator Pitch, in der wir fast ausschließlich eigene Arrangements aufführten. Highlights waren u.a. Auftritte bei BerVokal in Berlin, bei Vocale in Köln und beim Vokal Total Festival in München.
+                  </p>
+                  <p><a target="_blank" href="https://m.facebook.com/ElevatorPitchMusic/?locale2=de_DE">facebook.com/ElevatorPitchMusic/</a></p>
+                </div>
+                <div class="content" id="quartbreakers">
+                  <img src="img/projects/quartbreakers.jpg">
+                  <h3 class="subtitle">// The Quartbreakers</h3>
+                  <p>
+                    The Quartbreakers sind ein Männerensemble aus ehemaligen Solisten des Tölzer Knabenchors. Obwohl ich leider nie in den Genuss einer Knabenchorausbildung gekommen war, durfte ich 2004 bis 2006 ich als festes Mitglied mitsingen. Danach sprang ich immer wieder mal ein, wenn Not am Mann war. Neben eigenen Konzerten wurden diverse Feiern umrahmt. Über die Jahre sind enge Freundschaften entstanden und vielleicht werden unsere Söhne bald mal ein Vokalensemble bilden.
+                  </p>
+                  <p><a target="_blank" href="http://www.quartbreakers.com/">www.quartbreakers.com</a></p>
+                </div>
+                <div class="content" id="odd-one-out">
+                  <img src="img/projects/odd-one-out.jpg">
+                  <h3 class="subtitle">// OddOneOut</h3>
+                  <p>
+                    Meine erste richtige Band war gar nicht a cappella, sondern mit richtigen Instrumenten. Von 1997-2003 spielte ich Gitarre in der Pop-Rock Band OddOneOut, mit der wir hauptsächlich eigene Stücke aufführten und auf mehreren CDs veröffentlichten. Highlights in unserer Zeit waren Auftritte in der Großen Freiheit 36 Hamburg, der You-Messe in Berlin und dem Münchner Königsplatz. Trotz des Gewinns einiger Bandwettbewerbe (sogar im Finale eines BRAVO-Wettbewerbes waren wir dabei), blieb uns der große Durchbruch aus völlig unerklärlichen Gründen verwehrt, sodass wir uns nun nur noch einmal im Jahr treffen, um in Erinnerung zu schwelgen. Hier kannst du in unser letztes Studioalbum hören: (LINK).
+                  </p>
+                </div>
+                <div class="content" id="diverses">
+                  <img src="img/projects/misc.jpg">
+                  <h3 class="subtitle">// Diverses</h3>
+                  <ul>
+                    <li>Arrangeur, Sänger und Gitarrist für <a target="_blank" href="https://www.amazon.de/Pete-York-Susie-Swing-Revue/dp/B003ALJSPE/ref=sr_1_1?ie=UTF8&qid=1325779760&sr=8-1">Susie Who (live & Studio)</a></li>
+                    <li>Gitarrist für die „No Angels“ bei TV-Konzert (Pro7 / Tresor TV Produktions GmbH)</li>
+                    <li>Studio-Aufnahmen für Bayerischen Rundfunk (VOX /SEO Entertainment GmbH)</li>
+                    <li>Kleindarstellerrollen u.a. in <a target="_blank" href="https://www.youtube.com/watch?v=1oZZPDpO4DY&frags=pl%2CwnNintendo"> Wii Werbespot mit Phillip Lahm</a>, Bully’s Traumschiff Surprise, MädchenMädchen2</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img class="bg" id="workshops" src="img/backgrounds/workshops.jpg">
+    <section class="hero is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img class="title-initial" src="img/icons/w-light.svg">
+            Workshops
+          </h1>
+          <div class="columns">
+            <div class="column">
+              <div class="content light">
+                <p>Mit einigen Chören und Ensembles durfte ich bereits an Themen wie Groove, Timing, Intonation, Blending, Klang und Interpretation arbeiten. Zudem gebe ich u.a. an Musikschulen Workshops in Musiktheorie, VocalPercussion/Beatbox und Chorarrangement.</p>
+                <p>Wenn Du Interesse daran hast, dass ich auch mal mit Deinem Chor/Ensemble probe oder an Deiner Musikschule einen Workshop gebe, schreib mir einfach eine Nachricht.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div id="quotes">
+                <div class="card" id="quote-01">
+                  <div class="card-content">
+                    <p class="title">
+                      “Pop- und Jazzsänger, Vocal Groups, Chöre und Chorleiter aus dem Pop- und Jazzbereich profitieren enorm von Patricks Workshops. Sein umfassendes Know-How zum a-cappella Sound, Arrangements, Groove, Phrasing und Beatbox vermittelt er in entspannt humorvoller Art. Wir freuen uns auf seinen nächsten Workshop bei uns in der MusicAcademy!”
+                    </p>
+                    <p class="subtitle">
+                      Steffi Rothenbücher, Music Academy München
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="quote-02">
+                  <div class="card-content">
+                    <p class="title">
+                    "Wir hatten die Gelegenheit für unser zweites Album "Everytime" mit Patrick zusammenzuarbeiten. Dabei hat er nicht nur einen Song für uns arrangiert, sondern uns auch einen Tag bei unseren Proben begleitet. Für uns ist der Spagat zwischen klassischer Vokalmusik und modernen Popsongs immer wieder eine große Herausforderung. Patrick war daher mit seiner Erfahrung, seiner Begeisterung, seiner Expertise und nicht zu letzt mit seinem Spaß für uns die ideale Ergänzung. Wir würden ihn jederzeit weiterempfehlen."
+                    </p>
+                    <p class="subtitle">
+                      Ensemble Quartonal
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="quote-03">
+                  <div class="card-content">
+                    <p class="title">
+                      “Mit faszinierend ruhiger Stimme brachte Patrick meinen Sängerinnen und Sängern Tricks des Popgesangs bei, zeigte body percussion und interpretierte selbst bekannte Musik so selbstverständlich neu, dass meine Choris sich ohne Schwierigkeiten und sogar gerne darauf einlassen konnten! Immer eine Empfehlung für moderne Chormusik, fernab eingetrampelter Pfade.”
+                    </p>
+                    <p class="subtitle">
+                      Michael "Mike" Frey, Chorleiter München
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img class="bg" id="noten" src="img/backgrounds/noten.jpg">
+    <section class="hero is-light is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img class="title-initial" src="img/icons/n-light.svg">
+            Noten
+          </h1>
+          <div class="columns">
+            <div class="column">
+              <div class="content light">
+                <p>Für einige Gruppen durfte ich bereits Arrangements schreiben, so z.B. für <a target="_blank" href="https://www.youtube.com/watch?v=qD5Q4OGh_7c">Quartonal</a> (Sony Classic, 1. Platz Dt. Chorwettbewerb 2010), <a target="_blank" href="https://soundcloud.com/voicesintime/grenade-everybody-1?in=voicesintime/sets/auf-liebe-gemacht">VoicesInTime</a> (1. Platz Dt. Chorwettbewerb 2006), <a target="_blank" href="https://www.amazon.de/Pete-York-Susie-Swing-Revue/dp/B003ALJSPE/ref=sr_1_1?ie=UTF8&qid=1325779760&sr=8-1">Susie Who</a> und Schola Cantorum Leipzig</p>
+                <p>Gerne kann ich für deinen Chor/dein Ensemble ein maßgeschneidertes Arrangement eines Songs eurer Wahl erstellen. Schreib mir einfach eine Nachricht und ich setze mich mir Dir in Verbindung, um alle Details zu klären.</p>
+                <p>Hier findest du meine Arrangements/Stücke, die verlegt wurden. Wenn Du wissen willst, welche anderen Arrangements ich bereits geschrieben habe, sende mir eine kurze Nachricht.</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content light">
+                <ul>
+                  <li>
+                    My Love is your love -
+                    Whitney Houston -
+                    SATB -
+                    weitere Infos <a target="_blank" href="https://www.bosse-verlag.de/shop/produkt/details/BE736">hier</a>
+                  </li>
+                  <li>
+                    Never Forget -
+                    Take That -
+                    SMATB(B) -
+                    weitere Infos <a target="_blank" href="https://www.bosse-verlag.de/shop/produkt/details/BE424">hier</a>
+                  </li>
+                  <li>
+                    Der Weihnachtsmann -
+                    Patrick Prestel -
+                    SMATB -
+                    weitere Infos <a target="_blank" href="https://www.bosse-verlag.de/shop/produkt/details/BE732">hier</a>
+                  </li>
+                  <li>
+                    Wenn Du fliegst -
+                    Ina Müller -
+                    SSSAAA -
+                    weitere Infos <a target="_blank" href="https://www.bosse-verlag.de/shop/produkt/details/BE2498">hier</a>
+                  </li>
+                  <li>
+                    Keep on believing -
+                    Patrick Prestel -
+                    SMATBB -
+                    weitere Infos <a target="_blank" href="https://chor.helbling-verlag.de/?pagename=product&product=C6911">hier</a>
+                  </li>
+                  <li>
+                    Zeig' mir wie du tanzt -
+                    Frida Gold -
+                    SMATB -
+                    weitere Infos <a target="_blank" href="(https://de.schott-music.com/shop/chorbuch-2-no304943.html)">hier</a>
+                  </li>
+                  <li>
+                    Last Christmas -
+                    Whamp -
+                    SATB -
+                    weitere Infos <a target="_blank" href="(https://de.schott-music.com/shop/chorbuch-2-no304943.html)">hier</a>
+                  </li>
+                  <li>
+                    Morgen Kinder wird's was geben -
+                    trad. -
+                    SATB -
+                    weitere Infos <a target="_blank" href="(https://www.bosse-verlag.de/shop/produkt/details/BE961)">hier</a>
+                  </li>
+                  <li>
+                    Weihnachtswärmendes Liebeslied -
+                    Andrea Prestel-Galler/Patrick Prestel -
+                    SATB -
+                    weitere Infos <a target="_blank" href="(https://www.bosse-verlag.de/shop/produkt/details/BE961)">hier</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            <i class="light"><center>"Patrick Prestel ist einer der besten Arrangeure Deutschlands in der a cappella Szene. Seine Arrangements sind stilsicher, bestens singbar, witzig und innovativ." Veronica Bertsch, Chorleiterin und Gesangspädagogin <center/></i>
+        </div>
+      </div>
+    </section>
+
+    <img class="bg" id="vita" src="img/backgrounds/vita.jpg">
+    <section class="hero is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img class="title-initial" src="img/icons/v-light.svg">
+            Vita
+          </h1>
+          <h2 class="title">Ausbildung</h2>
+          <div class="content light">
+            <ul>
+              <li>2016 – 2017 SEA Tontechnik Ausbildung an der Akademie Media, Downhill-Studios München <br> <span class="small">Dozent: Tom Peschel</span></li>
+              <li>2013 - 2015 Ausbildung Pop&Jazz-Chorleitung der Stufe B an der Bundesakademie Wolfenbüttel <br> <span class="small">Dozenten: Christoph Gerl, Franny Fuchs, Claudia Burghard, Sascha Cohn, Linus Kasten, Juan Garcia, Achim Rust, Dimitris Liatsos</span></li>
+              <li>2008, 2010, 2012 & 2014 Einladung zum Europäischen Forum junger Komponisten für Vokalmusik in der Landesakademie Ochsenhausen <br> <span class="small">Dozenten: Thomas Jennefelt, Wolfram Buchenberg, Lone Larson; Bo Holten, Gunnar Eriksson, Gary Graden, Hans Schanderl, Urmas Sisask</span></li>
+              <li>2006 - 2010 Chorleiterausbildung im Bayerischen Sängerbund <br> <span class="small">Dozenten u.a.: Sigrid Weigl, Stefan Grünfelder, Alfons Brandl</span></li>
+              <li>2000 - 2003 Mitglied der Bayerische Singakademie (heute Bayerischer Landesjugendchor) <br> <span class="small"> Leitung: Prof. Gerd Guglöhr; Stimmbildner: Hartmut Elbert</span></li>
+              <li>seit 2001 Teilnahme an diversen Workshops (Gesang, Arrangement, Chorleitung, Beatboxing) <br> <span class="small">u.a. bei Roger Treece, Rhiannon, David Worm, Joey Blake (alle Bobby McFerrin’s Voicestra) Darmon Meader, Lauren Kinhan Kim Nazarian (alle New York Voices), Jens Johannsen (Vocal Line), Jim Daus Hjernoe, Morten Kjaer (M-Pact), Line Groth, Tine Fris, Kristoffer Fynbo Thorning (alle Postyr), Peder Karlsson, Anders Edenroth, Morten Vinther (alle The Real Group), Tom Bullard (Swingle Singers), Andrea Figallo (Flying Pickets, Wise Guys); Terry Lalo (Voices Messengers), Oliver Gies, Lukas Teske (beide Maybebop), Eric Whitacre, WesCarol (The House Jacks), Michele Weir, Anne Kohler, Matthias Becker, Jetse Bremer, Martin Carbow, Bertrand Gröger, Reinette van Zjitveld-Lustig, Prof. Kurt Suttner, Felix Powroslo, Rabih Lahoud, Michael Eimann (Slixs), Marco Bilep, Daniel Barke, Maike Lindemann, Diana Labrenz (Voxid), Jan-Hendrik Hermann</span></li>
+            </ul>
+          </div>
+          <h2 class="title">Auszeichnungen</h2>
+          <div class="content light">
+            <ul>
+              <li>Mit SoulFood Delight:
+                  <p>
+                     -  Carl-Friedrich-Zelter Chorwettbewerb 2019, Heilbronn: 1.Platz, mit hervorragen dem Erfolg teilgenommen, Sonderpreis für die beste Präsentation eines Volkslieds<br>
+                     -  „Sing Dein Bestes“ Wertungssingen des Bayerischen Sängerbundes 2019: mit hervorragendem Erfolg teilgenommen<br>
+                     -  Bayerischer Chorwettbewerb 2017: mit sehr gutem Erfolg teilgenommen.
+                   </p>
+                 </li>
+              <li>Mit VoicesInTime:
+                  <p>
+                    - "Let the Peoples Sing" Winner Open Choir Category 2013<br>
+                    - Orlando-di-Lasso-Medaille 2011<br>
+                    - Bayerischer Kunstförderpreis 2008<br>
+                    - 1. Preisträger Deutscher Chorwettbewerb 2006<br>
+                    - 1. Preisträger Bayerischer Chorwettbewerb 2005<br>
+                    - 1. Preisträger International Choir Festival Arnheim, NL 2005<br>
+                    - 1. Preisträger Internationaler Chorwettbewerb Graz 2004<br>
+                    - 2. Preisträger Deutscher Chorwettbewerb 2002<br>
+                    - 1. Preisträger Bayerischer Chorwettbewerb 2001
+                  </p>
+                </li>
+              <li>Mit OddOneOut:
+                  <p>
+                    - Finalist BRAVO-Youngstars 2001<br>
+                    - 1. Platz Running for the best 2000<br>
+                    - 2. Platz Feierwerk München Bandwettbewerb 2000<br>
+                    - 1. Platz Talentcity-Bandwettbewerb1999<br>
+                    - 5. Platz Emergenza München Finale 1998<br>
+                    - 1. Platz Newcomercontest München 1997
+                  </p>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <img class="bg" id="kontakt" src="img/backgrounds/kontakt.jpg">
+    <section class="hero is-light is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <img class="title-initial" src="img/icons/k-light.svg">
+            Kontakt
+          </h1>
+          <div class="columns">
+            <div class="column">
+              <div class="content light">
+                <p>Hier kannst du mir eine Nachricht schreiben.</p>
+                <p>Ich freue mich von Dir zu hören!</p>
+                <p>E-Mail: <a href="mailto:&#112;&#097;&#116;&#114;&#105;&#099;&#107;&#112;&#114;&#101;&#115;&#116;&#101;&#108;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#100;&#101;">&#112;&#097;&#116;&#114;&#105;&#099;&#107;&#112;&#114;&#101;&#115;&#116;&#101;&#108;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#100;&#101;</a></p>
+                <p>Liebe Grüße Patrick</p>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content">
+        <a href="imprint.html">Impressum</a> |
+        <a href="privacy.html">Datenschutzerklärung</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
