@@ -226,6 +226,14 @@ span.small {
   font-size: 0.80rem;
 }
 
+#quotes .card, #news .card {
+  display: none;
+}
+
+#quotes .card:first-child, #news .card:first-child {
+  display: flex;
+}
+
 #news .title {
   font-size: 1rem;
   line-height: 1.4;
