@@ -4,11 +4,13 @@ function showproject(projectid) {
 }
 
 function showquote(quote) {
+  if ($(quote).css("display") != "none") return;
   $("#quotes").children().hide();
   $(quote).css("display", "flex").hide().fadeIn("slow");
 }
 
 function shownews(newsitem) {
+  if ($(newsitem).css("display") != "none") return;
   $("#news").children().hide();
   $(newsitem).css("display", "flex").hide().fadeIn("slow");
 }
@@ -73,13 +75,11 @@ $(document).ready(function() {
 
   // Quotes
   if ($("#quotes").length) {
-    showquote(quotes[0]);
     cycle_quotes();
   }
 
   // News
   if ($("#news").length) {
-    shownews(newsitems[0]);
     cycle_news();
   }
 

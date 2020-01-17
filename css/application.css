@@ -92,6 +92,7 @@ a.navbar-item:hover {
   #project-description {
     position: relative;
     top: -300px;
+    margin-bottom: -300px;
   }
 }
 
@@ -224,6 +225,14 @@ span.small {
 
 #quotes .subtitle {
   font-size: 0.80rem;
+}
+
+#quotes .card, #news .card {
+  display: none;
+}
+
+#quotes .card:first-child, #news .card:first-child {
+  display: flex;
 }
 
 #news .title {
